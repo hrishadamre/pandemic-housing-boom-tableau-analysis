@@ -1,0 +1,29 @@
+# Large / licensed raw data (see data/README.md)
+data/raw/housingvalues_county_time.csv
+*.hyper
+*.tde
+
+# Tableau temp & backup files
+*.twbr
+*.tmp
+~*.twb
+~*.twbx
+Tableau*/Logs/
+Bookmarks/
+
+# Course materials not authored by me
+*syllabus*
+*Syllabus*
+lecture*.pptx
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+*.swp
+
+# Python (if scripts are added later)
+__pycache__/
+.ipynb_checkpoints/
+.venv/
