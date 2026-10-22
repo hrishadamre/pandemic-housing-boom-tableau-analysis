@@ -10,14 +10,6 @@
   <a href="docs/methodology.md"><img src="https://img.shields.io/badge/Methodology-Calculations-1E3A5F?style=for-the-badge&logo=readthedocs&logoColor=E0F2FE&labelColor=0F172A" alt="Methodology" /></a>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Tableau-Desktop%20%26%20Public-334155?style=flat-square&logo=tableau&logoColor=white" alt="Tableau" />
-  <img src="https://img.shields.io/badge/LOD%20Expressions-FIXED-334155?style=flat-square" alt="LOD expressions" />
-  <img src="https://img.shields.io/badge/Parameters%20%26%20Dashboard%20Actions-334155?style=flat-square" alt="Parameters and actions" />
-  <img src="https://img.shields.io/badge/Data%20Storytelling-334155?style=flat-square" alt="Data storytelling" />
-  <img src="https://img.shields.io/badge/UMD%20Smith-BUDT%20705%20%C2%B7%20Fall%202026-334155?style=flat-square" alt="UMD Smith BUDT 705" />
-</p>
-
 <br>
 
 <table align="center">
@@ -54,7 +46,7 @@ flowchart LR
 ```
 
 <table>
-<tr><th align="left">Step</th><th align="left">What I did</th></tr>
+<tr><th align="left">Steps</th></tr>
 <tr><td><b>Frame</b></td><td>Defined two comparison windows: the <b>boom</b> (Jan 2020 → Jun 2022) and the <b>aftermath</b> (Jun 2022 → Jun 2026), split at the start of the rate shock.</td></tr>
 <tr><td><b>Prepare</b></td><td>Joined four sources on FIPS and year-month, fixed two-digit years in the rate files, and added a null check after finding that 67 counties without values were being silently mislabeled.</td></tr>
 <tr><td><b>Model</b></td><td>Used <code>FIXED</code> LOD expressions to pin each county's anchor values, then classified counties into four market segments by median boom and post-2022 growth.</td></tr>
@@ -137,7 +129,6 @@ flowchart LR
 </tr>
 </table>
 
-The redesign came from professor and peer-review feedback combined with an audit against the BUDT 705 Baseline Visualization Standards. The full reasoning is in the [project reflection](reports/project-reflection.pdf) and the [chart redesign write-up](reports/chart-redesign-before-after.pdf).
 
 <br>
 
@@ -147,9 +138,7 @@ The redesign came from professor and peer-review feedback combined with an audit
 pandemic-housing-boom-tableau-analysis/
 ├── README.md
 ├── tableau/                 # Tableau workbook (.twbx packaged / .twb)
-├── data/
-│   ├── README.md            # Sources, data dictionary, how to get the main table
-│   └── raw/                 # Supplemental CSVs (county profile, economic, mortgage rates)
+├── data/               # Supplemental CSVs (county profile, economic, mortgage rates)
 ├── assets/
 │   ├── dashboards/          # Final dashboard screenshots
 │   └── iteration/           # Draft vs. final comparisons
@@ -164,7 +153,7 @@ pandemic-housing-boom-tableau-analysis/
 
 <table>
 <tr><td><b>Fastest</b></td><td>Open the <a href="https://public.tableau.com/app/profile/hrishad.amre/viz/HrishadAmre-DataVisualization/Story1">live story on Tableau Public</a>. No install needed.</td></tr>
-<tr><td><b>In Tableau</b></td><td>Open the workbook in <code>tableau/</code> with Tableau Desktop or Tableau Public (free). The packaged <code>.twbx</code> includes its data. To use the <code>.twb</code>, add the main county table to <code>data/raw/</code> first (see <a href="data/README.md">data/README.md</a>).</td></tr>
+<tr><td><b>In Tableau</b></td><td>Open the workbook in <code>tableau/</code> with Tableau Desktop or Tableau Public (free). The packaged <code>.twbx</code> includes its data.</td></tr>
 <tr><td><b>Interact</b></td><td>On Dashboard 2, pick a segment from <i>Show Segment</i> to recolor the tile map, then select dots in the scatter to filter the county-type chart.</td></tr>
 </table>
 
@@ -184,7 +173,7 @@ pandemic-housing-boom-tableau-analysis/
 <p align="center">
   <b>Hrishad Amre</b><br>
   <sub>M.S. Information Systems & AI · Robert H. Smith School of Business, University of Maryland</sub><br>
-  <sub>Data Visualization for Business (BUDT 705) · Prof. Jessica M. Clark · Fall 2026</sub>
+  <sub>Data Visualization for Business</sub>
 </p>
 
 <p align="center">
